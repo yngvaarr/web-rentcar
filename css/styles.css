@@ -1,0 +1,216 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5A4A50; /* Чуть ярче, чем шапка */
+}
+
+/* Обёртка страницы */
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+header {
+    background-color: #493C40;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 162px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Навигация */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #493C40;
+    font-weight: 800;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Контент */
+.container {
+    width: 100%;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Баннер */
+.banner {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slider .prev,
+.slider .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+/* Преимущества и новости */
+.advantages,
+.news {
+    margin-top: 20px;
+}
+
+.advantages ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.advantages li {
+    background: #e0e0e0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Фотогалерея */
+.gallery-slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 40px; /* добавим отступ после галереи */
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  gap: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery-slide {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+
+/* Преимущества */
+.advantages ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.advantages li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+.ul-sect-2 li {
+    background-color: #EEEEEE;
+    list-style: none;
+    margin: 0px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 15px 0px 15px 17px;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0px 0px 10px;
+}
+
+/* Подвал */
+footer {
+    background-color: #493C40;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer-inner {
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    /* text-decoration: ; */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin: 4px 0;
+}

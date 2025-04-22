@@ -1,0 +1,200 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #5A4A50; /* Чуть ярче, чем шапка */
+}
+
+/* Обёртка страницы */
+.page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+header {
+    background-color: #493C40;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 162px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Навигация */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #493C40;
+    font-weight: 800;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Контент */
+.container {
+    width: 100%;
+    margin: 20px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.tariffs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tariff-card {
+  flex: 0 1 calc(50% - 20px); /* По 2 в ряд */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s;
+}
+
+.tariff-card:hover {
+  transform: translateY(-5px);
+}
+
+.tariff-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.tariff-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.price-start {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.car-info {
+  font-size: 13px;
+  color: #777;
+  margin: 5px 0 10px;
+}
+
+.tariff-body.compact {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.tariff-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tariff-table {
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.tariff-table .column {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tariff-table .left {
+  color: #666;
+}
+
+.tariff-table .right {
+  font-weight: bold;
+  text-align: right;
+}
+
+.car-photo {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.availability {
+  margin-top: 8px;
+  color: green;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.availability .dot {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.right-align {
+  text-align: right;
+}
+
+
+/* Подвал */
+footer {
+    background-color: #493C40;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer-inner {
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    /* text-decoration: ; */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    margin: 4px 0;
+}

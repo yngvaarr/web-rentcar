@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #5A4A50;
+  color: #333;
+}
+
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #493C40;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.logo {
+  max-width: 162px;
+  display: block;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #493C40;
+  font-weight: 800;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid white;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+.container h2 {
+  font-size: 32px;
+  margin-top: 20px;
+  color: #2C2C2C;
+}
+
+.container p {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.banner {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ===  Галерея с одной картинкой и кнопками  === */
+.gallery-container {
+  position: relative;
+  max-width: 80%; /*  или любой другой размер, можно в px */
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-btn.prev {
+  left: 20px; /*  Больше отступ от левого края  */
+}
+
+.gallery-btn.next {
+  right: 20px; /*  Больше отступ от правого края  */
+}
+/* ===  Конец стилей для галереи  === */
+
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.about-list li {
+  background: #EEEEEE;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+footer {
+  background-color: #493C40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin: 4px 0;
+}
